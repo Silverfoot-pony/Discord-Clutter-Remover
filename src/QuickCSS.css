@@ -19,8 +19,6 @@
 /* Removes Activity tab in member list*/
     [class*="membersGroup_"][class*="container_"]:nth-of-type(1) { display:none!important; }
     [class*="container_"][class*="openOnHover_"] { display:none!important; }
-    [class*="membersGroup_"][class*="container_"]:nth-of-type(1) { display:none!important; }  
-    [class*="container_"][class*="openOnHover_"] { display:none!important; }
 
 /*Hide Active Now tab in fren list*/
      *[class^='nowPlayingColumn'] { display: none; }
