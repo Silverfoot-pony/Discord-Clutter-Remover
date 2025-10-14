@@ -16,7 +16,7 @@
         "winNativeTitleBar": false,
         "plugins": {
             "ChatInputButtonAPI": {
-                "enabled": false
+                "enabled": true
             },
             "CommandsAPI": {
                 "enabled": true
@@ -34,10 +34,10 @@
                 "enabled": true
             },
             "MessageEventsAPI": {
-                "enabled": false
+                "enabled": true
             },
             "MessagePopoverAPI": {
-                "enabled": false
+                "enabled": true
             },
             "MessageUpdaterAPI": {
                 "enabled": true
@@ -61,7 +61,10 @@
                 "enabled": false
             },
             "AnonymiseFileNames": {
-                "enabled": true
+                "enabled": true,
+                "anonymiseByDefault": true,
+                "method": 0,
+                "randomisedLength": 7
             },
             "AppleMusicRichPresence": {
                 "enabled": false
@@ -88,7 +91,9 @@
                 "enabled": false
             },
             "BetterSessions": {
-                "enabled": true
+                "enabled": true,
+                "backgroundCheck": false,
+                "checkInterval": 20
             },
             "BetterSettings": {
                 "enabled": false,
@@ -103,10 +108,12 @@
                 "enabled": false
             },
             "BlurNSFW": {
-                "enabled": true
+                "enabled": false,
+                "blurAmount": 10
             },
             "CallTimer": {
-                "enabled": true
+                "enabled": true,
+                "format": "stopwatch"
             },
             "ClearURLs": {
                 "enabled": true
@@ -148,7 +155,10 @@
                 "enabled": false
             },
             "Dearrow": {
-                "enabled": true
+                "enabled": true,
+                "hideButton": false,
+                "replaceElements": 0,
+                "dearrowByDefault": true
             },
             "Decor": {
                 "enabled": false
@@ -160,7 +170,8 @@
                 "enabled": true
             },
             "Experiments": {
-                "enabled": true
+                "enabled": true,
+                "toolbarDevMenu": false
             },
             "ExpressionCloner": {
                 "enabled": true
@@ -223,10 +234,14 @@
                 "enabled": true
             },
             "IgnoreActivities": {
-                "enabled": true
+                "enabled": true,
+                "ignoredActivities": [],
+                "idsList": "",
+                "ignorePlaying": false
             },
             "ImageFilename": {
-                "enabled": true
+                "enabled": true,
+                "showFullUrl": false
             },
             "ImageLink": {
                 "enabled": false
@@ -235,7 +250,8 @@
                 "enabled": false
             },
             "ImplicitRelationships": {
-                "enabled": true
+                "enabled": true,
+                "sortByAffinity": true
             },
             "InvisibleChat": {
                 "enabled": true,
@@ -254,7 +270,10 @@
                 "enabled": false
             },
             "MemberCount": {
-                "enabled": true
+                "enabled": true,
+                "memberList": true,
+                "toolTip": true,
+                "voiceActivity": true
             },
             "MentionAvatars": {
                 "enabled": false
@@ -269,7 +288,17 @@
                 "enabled": false
             },
             "MessageLogger": {
-                "enabled": true
+                "enabled": true,
+                "collapseDeleted": false,
+                "deleteStyle": "text",
+                "ignoreBots": false,
+                "ignoreSelf": false,
+                "ignoreUsers": "",
+                "ignoreChannels": "",
+                "ignoreGuilds": "",
+                "logEdits": true,
+                "logDeletes": true,
+                "inlineEdits": true
             },
             "MessageTags": {
                 "enabled": false
@@ -281,7 +310,9 @@
                 "enabled": false
             },
             "NoBlockedMessages": {
-                "enabled": true
+                "enabled": true,
+                "ignoreMessages": false,
+                "applyToIgnoredUsers": true
             },
             "NoDevtoolsWarning": {
                 "enabled": false
@@ -323,7 +354,10 @@
                 "enabled": false
             },
             "OnePingPerDM": {
-                "enabled": true
+                "enabled": true,
+                "channelToAffect": "both_dms",
+                "allowMentions": false,
+                "allowEveryone": false
             },
             "oneko": {
                 "enabled": false
@@ -350,13 +384,35 @@
                 "enabled": true
             },
             "PinDMs": {
-                "enabled": true
+                "enabled": true,
+                "userBasedCategoryList": {
+                    "849075302935560202": [
+                        {
+                            "id": "5imo9g7o816",
+                            "name": "Moots",
+                            "color": 10070709,
+                            "collapsed": false,
+                            "channels": [
+                                "999618356137169016",
+                                "849598316567855134",
+                                "1154161970195484765",
+                                "1371579784571912252"
+                            ]
+                        }
+                    ]
+                },
+                "canCollapseDmSection": false,
+                "pinOrder": 0
             },
             "PlainFolderIcon": {
                 "enabled": false
             },
             "PlatformIndicators": {
-                "enabled": true
+                "enabled": false,
+                "colorMobileIndicator": true,
+                "list": true,
+                "badges": true,
+                "messages": true
             },
             "PreviewMessage": {
                 "enabled": false
@@ -374,7 +430,12 @@
                 "enabled": false
             },
             "RelationshipNotifier": {
-                "enabled": true
+                "enabled": true,
+                "offlineRemovals": true,
+                "groups": true,
+                "servers": true,
+                "friends": true,
+                "friendRequestCancels": true
             },
             "ReplaceGoogleSearch": {
                 "enabled": false
@@ -434,7 +495,9 @@
                 "enabled": false
             },
             "SilentTyping": {
-                "enabled": true
+                "enabled": true,
+                "isEnabled": true,
+                "showIcon": false
             },
             "SortFriendRequests": {
                 "enabled": false
@@ -467,10 +530,15 @@
                 "enabled": false
             },
             "Translate": {
-                "enabled": true
+                "enabled": true,
+                "autoTranslate": false,
+                "showChatBarButton": true
             },
             "TypingIndicator": {
-                "enabled": true
+                "enabled": true,
+                "includeMutedChannels": false,
+                "includeCurrentChannel": true,
+                "indicatorMode": 3
             },
             "TypingTweaks": {
                 "enabled": false
@@ -485,7 +553,9 @@
                 "enabled": false
             },
             "UserMessagesPronouns": {
-                "enabled": true
+                "enabled": true,
+                "showSelf": true,
+                "pronounsFormat": "LOWERCASE"
             },
             "UserVoiceShow": {
                 "enabled": false
@@ -569,8 +639,8 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1760308522927
+            "settingsSyncVersion": 1760449813139
         }
     },
-    "quickCss": "/*Hide Discover button*/    \n    div[class*=\"footer_\"]:has([aria-label=\"Discover\"]) { display: none; } \n\n/*Hide App Launcer*/\n    [class*=\"channelAppLauncher_\"] { display: none !important; }\n\n/* Hide Nitro gift button */\n    button[aria-label=\"Send a gift\"] { display: none; }\n\n/* Hide GIF picker button */\n    button[aria-label=\"Open GIF picker\"] { display: none; }\n\n/* Hide sticker picker button */\n    button[aria-label=\"Open sticker picker\"] { display: none; }\n\n/* Hide annoying sticker popup window that appears when you type */\n    .channelTextArea-1FufC0 > .container-1ZA19X { display: none; }\n\n/* Removes Activity tab in member list*/\n    [class*=\"membersGroup_\"][class*=\"container_\"]:nth-of-type(1) { display:none!important; }\n    [class*=\"container_\"][class*=\"openOnHover_\"] { display:none!important; }\n\n/*Hide Active Now tab in fren list*/\n     *[class^='nowPlayingColumn'] { display: none; }\n\n/*Hide Nitro (/store) and Shop (/shop) from the direct messages submenu*/\n    a[href=\"/store\"] { display: none; }\n    a[href=\"/shop\"] { display: none; }"
+    "quickCss": "/*Hide Discover button*/\ndiv[class*=\"listItemWrapper__91816\"]:has([aria-label=\"Discover\"]) {\n    display: none;\n}\n\n/* Hide Nitro gift button */\ndiv[class*=\"button__74017 button__24af7 noHover__24af7\"]{\n    display: none;\n}\n\n/*Hide App Launcher*/\n[class*=\"channelAppLauncher_\"] {\n    display: none !important;\n}\n\n/* Hide annoying sticker popup window that appears when you type */\n.channelTextArea-1FufC0>.container-1ZA19X {\n    display: none;\n}\n\n/* Removes Activity tab in member list*/\n[class*=\"membersGroup_\"][class*=\"container_\"]:nth-of-type(1) {\n    display: none !important;\n}\n\n[class*=\"container_\"][class*=\"openOnHover_\"] {\n    display: none !important;\n}\n\n/*Hide Active Now tab in fren list*/\n*[class^='nowPlayingColumn'] {\n    display: none;\n}\n\n/*Hide Nitro (/store) and Shop (/shop) from the direct messages submenu. Quests too now (/quest-home*/\na[href=\"/store\"] {\n    display: none;\n}\n\na[href=\"/shop\"] {\n    display: none;\n}\n\na[href=\"/quest-home\"] {\n    display: none;\n}"
 }
