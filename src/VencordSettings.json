@@ -61,7 +61,7 @@
                 "enabled": false
             },
             "AnonymiseFileNames": {
-                "enabled": true,
+                "enabled": false,
                 "anonymiseByDefault": true,
                 "method": 0,
                 "randomisedLength": 7
@@ -119,7 +119,8 @@
                 "enabled": true
             },
             "ClientTheme": {
-                "enabled": false
+                "enabled": false,
+                "color": "313338"
             },
             "ColorSighted": {
                 "enabled": true
@@ -180,7 +181,13 @@
                 "enabled": false
             },
             "FakeNitro": {
-                "enabled": false
+                "enabled": true,
+                "enableStickerBypass": true,
+                "enableStreamQualityBypass": true,
+                "enableEmojiBypass": true,
+                "transformEmojis": true,
+                "transformStickers": true,
+                "transformCompoundSentence": false
             },
             "FakeProfileThemes": {
                 "enabled": false
@@ -195,7 +202,8 @@
                 "enabled": false
             },
             "FixImagesQuality": {
-                "enabled": true
+                "enabled": true,
+                "originalImagesInChat": false
             },
             "FixSpotifyEmbeds": {
                 "enabled": true
@@ -300,9 +308,6 @@
                 "logDeletes": true,
                 "inlineEdits": true
             },
-            "MessageTags": {
-                "enabled": false
-            },
             "MutualGroupDMs": {
                 "enabled": false
             },
@@ -310,7 +315,7 @@
                 "enabled": false
             },
             "NoBlockedMessages": {
-                "enabled": true,
+                "enabled": false,
                 "ignoreMessages": false,
                 "applyToIgnoredUsers": true
             },
@@ -396,7 +401,8 @@
                                 "999618356137169016",
                                 "849598316567855134",
                                 "1154161970195484765",
-                                "1371579784571912252"
+                                "1371579784571912252",
+                                "1432316345567150110"
                             ]
                         }
                     ]
@@ -627,6 +633,15 @@
             },
             "WebContextMenus": {
                 "enabled": true
+            },
+            "MoreQuickReactions": {
+                "enabled": false
+            },
+            "NoDefaultHangStatus": {
+                "enabled": false
+            },
+            "CustomCommands": {
+                "enabled": false
             }
         },
         "notifications": {
@@ -639,7 +654,11 @@
             "authenticated": false,
             "url": "https://api.vencord.dev/",
             "settingsSync": false,
-            "settingsSyncVersion": 1760449813139
+            "settingsSyncVersion": 1773654426083
+        },
+        "uiElements": {
+            "chatBarButtons": {},
+            "messagePopoverButtons": {}
         }
     },
     "quickCss": "/*Hide Discover button*/\ndiv[class*=\"listItemWrapper__91816\"]:has([aria-label=\"Discover\"]) {\n    display: none;\n}\n\n/* Hide Nitro gift button */\ndiv[class*=\"button__74017 button__24af7 noHover__24af7\"]{\n    display: none;\n}\n\n/*Hide App Launcher*/\n[class*=\"channelAppLauncher_\"] {\n    display: none !important;\n}\n\n/* Hide annoying sticker popup window that appears when you type */\n.channelTextArea-1FufC0>.container-1ZA19X {\n    display: none;\n}\n\n/* Removes Activity tab in member list*/\n[class*=\"membersGroup_\"][class*=\"container_\"]:nth-of-type(1) {\n    display: none !important;\n}\n\n[class*=\"container_\"][class*=\"openOnHover_\"] {\n    display: none !important;\n}\n\n/*Hide Active Now tab in fren list*/\n*[class^='nowPlayingColumn'] {\n    display: none;\n}\n\n/*Hide Nitro (/store) and Shop (/shop) from the direct messages submenu. Quests too now (/quest-home*/\na[href=\"/store\"] {\n    display: none;\n}\n\na[href=\"/shop\"] {\n    display: none;\n}\n\na[href=\"/quest-home\"] {\n    display: none;\n}"
